@@ -32,18 +32,13 @@ def hello(name):
 
 @app.route('/person/')
 def helloperson():
-    return jsonify({'first name':'Jabed', 
-                    'surname':'Miah'}, {'first name':'Sadiq', 'surname':'Rahman'}, {'first name':'joe', 'surname':'smith'})
+    return jsonify({'first name':'tom', 'surname':'smith'}, 
+                   {'first name':'rob', 'surname':'smith'}, 
+                   {'first name':'joe', 'surname':'smith'},
+                   {'first name':'Ted', 'surname':'smith'}, 
+                   {'first name':'joe', 'surname':'smith'}, 
+                   {'first name':'steve', 'surname':'smith'})
 
-@app.route('/person2/')
-def helloperson2():
-    return jsonify({'first name':'Ted', 
-                    'surname':'smith'}, {'first name':'joe', 'surname':'smith'}, {'first name':'steve', 'surname':'smith'})
-
-@app.route('/person3/')
-def helloperson3():
-    return jsonify({'first name':'a', 
-                    'surname':'aa'}, {'first name':'aaa', 'surname':'aaaa'}, {'first name':'ccc', 'surname':'smith'})                    
 
 @app.route('/numbers/')
 def print_list():
