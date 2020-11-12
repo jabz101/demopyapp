@@ -33,7 +33,7 @@ def hello(name):
 @app.route('/person/')
 def helloperson():
     return jsonify({'first name':'Jabed', 
-                    'surname':'Miah'}, {'first name':'Sadiq', 'surname':'Rahman'})
+                    'surname':'Miah'}, {'first name':'Sadiq', 'surname':'Rahman'}, {'first name':'joe', 'surname':'smith'})
 
 @app.route('/numbers/')
 def print_list():
