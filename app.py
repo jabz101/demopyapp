@@ -35,6 +35,11 @@ def helloperson():
     return jsonify({'first name':'Jabed', 
                     'surname':'Miah'}, {'first name':'Sadiq', 'surname':'Rahman'}, {'first name':'joe', 'surname':'smith'})
 
+@app.route('/person2/')
+def helloperson2():
+    return jsonify({'first name':'Ted', 
+                    'surname':'smith'}, {'first name':'joe', 'surname':'smith'}, {'first name':'steve', 'surname':'smith'})
+
 @app.route('/numbers/')
 def print_list():
     return jsonify(list(range(4))) 
