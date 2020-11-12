@@ -41,7 +41,7 @@ def helloperson2():
                     'surname':'smith'}, {'first name':'joe', 'surname':'smith'}, {'first name':'steve', 'surname':'smith'})
 
 @app.route('/person3/')
-def helloperson2():
+def helloperson3():
     return jsonify({'first name':'a', 
                     'surname':'aa'}, {'first name':'aaa', 'surname':'aaaa'}, {'first name':'ccc', 'surname':'smith'})                    
 
